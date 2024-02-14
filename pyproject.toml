@@ -1,7 +1,7 @@
 [project]
-name = "regexmatch"
+name = "extractive_summary"
 version = "0.0.0"
-description = "Template repo for Guardrails Hub validators."
+description = "Validates that a string is a valid extractive summary of a given document."
 authors = [
     {name = "Guardrails AI", email = "contact@guardrailsai.com"}
 ]
@@ -9,23 +9,8 @@ license = {file = "LICENSE"}
 readme = "README.md"
 requires-python = ">= 3.8"
 dependencies = [
-    "rstr",
-    "guardrails-ai>=0.3.2"
-]
-
-[project.optional-dependencies]
-dev = [
-    "pyright",
+    "guardrails-ai>=0.3.2",
+    "nltk",
     "pytest",
-    "ruff"
+    "thefuzz"
 ]
-
-[tool.pytest.ini_options]
-minversion = "6.0"
-addopts = "-rP"
-testpaths = [
-    "test"
-]
-
-[tool.pyright]
-include = ["validator"]
