@@ -26,7 +26,7 @@ This validator is only useful when performing extractive summarization. If the s
 ## Installation
 
 ```bash
-$ guardrails hub install hub://aryn-ai/extractive_summary
+$ guardrails hub install hub://aryn/extractive_summary
 ```
 
 ## Usage Examples
